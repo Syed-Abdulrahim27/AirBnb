@@ -1,0 +1,74 @@
+.SearchBox {
+  background-color: #f0f2f1;
+  padding: 40px;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%); /* Light grey background */
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 900px; /* Wider maximum width for a spacious layout */
+  margin: 0 auto; /* Center the search bar */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.SearchComponent {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.SearchComponent:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make input fields take full width */
+  transition: border-color 0.2s; /* Smooth transition on focus */
+}
+
+input:focus {
+  border-color: hsl(150, 5%, 31%); /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.search-button {
+  background-color: #ff5a5f; /* Set button background color */
+  color: white; /* Text color for the search icon */
+  border: none; /* Remove default button border */
+  border-radius: 50%; /* Make the button round */
+  width: 40px; /* Set button width */
+  height: 40px; /* Set button height */
+  display: flex; /* Center the icon */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #ff0004; /* Darken button color on hover */
+}
+.custom-line {
+  border: none; /* Remove the default border */
+  height: 0.1px; /* Set the thickness of the line */
+  background-color: #b1b0b0; /* Set the color of the line */
+  margin-top: 40px; /* Add some space above and below the line */
+  width: 100%; /* Make the line take up the full width */
+}
+@media (max-width: 768px) {
+  .SearchBar {
+    display: block;
+    align-items: first baseline;
+    justify-content: space-between;
+  }
+  .search-button {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,9 @@
+.ListingContainer {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  align-items: flex-start; /* Aligns items at the start vertically */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  text-align: center; /* Centers text inside cards */
+  /* gap: 20px;*/
+  padding: 20px;
+}

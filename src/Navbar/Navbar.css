@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  background-color: #f0f2f1;
+}
+
+.nav_logo img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.MenuandUser {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+.Menu {
+  font-size: smaller;
+}
+.Profile {
+  font-size: large;
+}
+.nav_menu_btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.Stays-Experience {
+  display: flex;
+  gap: 20px; /* Space between each item */
+  align-items: center;
+}
+
+.Stays-Experience h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333; /* Default text color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Stays-Experience h3:hover {
+  color: #ff5a5f; /* Example hover color */
+}
+
+@media (max-width: 768px) {
+  .Stays-Experience {
+    display: none; /* Hide by default on smaller screens */
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust to position below the navbar */
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px 0;
+  }
+
+  .Stays-Experience.open {
+    display: flex; /* Show the items when open */
+  }
+
+  .Stays-Experience h3 {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 760px) {
+  .nav_menu_btn {
+    display: none;
+  }
+  .Stays-Experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  .Stays-Experience h3 {
+    display: block;
+  }
+}
