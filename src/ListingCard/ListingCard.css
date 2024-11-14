@@ -36,7 +36,7 @@
 .Listing-Card h4:last-child {
   font-weight: bold;
 }
-.details {
+.Details {
   display: flex;
   justify-content: space-between;
   text-align: center;

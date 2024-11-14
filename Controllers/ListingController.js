@@ -36,11 +36,11 @@ exports.getAllListings = (req, res) => {
 exports.getListingbyID = (req, res) => {
   console.log(req.params);
   const id = req.params.id * 1; //converting from string to number
-  const tour = Listings.find((el) => el.id === id);
+  const Listing = Listings.find((el) => el.id === id);
   res.status(200).json({
     status: "success",
     data: {
-      tour,
+      Listing,
     },
   });
 };
