@@ -44,3 +44,21 @@
   border-top: 1px solid #ddd;
   padding-top: 20px;
 }
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icons i {
+  margin-right: 15px;
+  font-size: 2.5rem;
+  color: #ff6f61;
+  transition: color 0.2s ease-in-out 0.1s;
+}
+
+.icons i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: rgb(90, 109, 255);
+}

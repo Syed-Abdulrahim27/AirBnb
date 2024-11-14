@@ -3,6 +3,17 @@ import "./footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
+      <div class="icons">
+        <a href="#" id="instagram" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" id="facebook" aria-label="facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" id="twitter" aria-label="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
       <div className="footer-content">
         <div className="footer-section">
           <h4>About</h4>

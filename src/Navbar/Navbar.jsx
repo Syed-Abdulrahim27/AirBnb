@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
 
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
@@ -30,14 +31,25 @@ export default function Navbar() {
         <h3 onClick={handleNavLinkClick}>Airbnb your home</h3>
       </div>
       <div className="user-section">
-        <i className="fa-solid fa-globe" style={{ color: "#c9c9c9" }}></i>
         <div className="MenuandUser">
-          <span className="Menu">
+          <span className="Menu" onClick={() => setIsLoginOpen(!isLoginOpen)}>
             <i className="fa-solid fa-bars" style={{ marginRight: "10px" }}></i>
           </span>
           <span className="Profile">
             <i className="fa-solid fa-user"></i>
           </span>
+          {isLoginOpen && (
+            <div className="dropdown-menu">
+              <ul>
+                <li>
+                  <i className="fa-solid fa-right-to-bracket"></i>Login
+                </li>
+                <li>
+                  <i className="fa-solid fa-user-plus"></i>SignUp
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

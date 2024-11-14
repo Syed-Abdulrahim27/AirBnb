@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "title": "Go VIP with Kevin Hart",
+    "image": "src/img/kevinhart.webp",
+    "hostedBy": "Kevin Hart",
+    "availability": "Sold Out",
+    "price": 100,
+    "location": "Los Angeles, CA"
+  },
+  {
+    "id": 1,
+    "title": "Beachfront Villa in Malibu",
+    "image": "src/img/Beachfront Villa in Malibu.jpg",
+    "hostedBy": "John Doe",
+    "availability": "Available",
+    "price": 100,
+    "location": "Malibu, CA"
+  },
+  {
+    "id": 2,
+    "title": "Countryside Cabin Escape",
+    "image": "src/img/Countryside Cabin Escape.jpg",
+    "hostedBy": "Jane Smith",
+    "availability": "Few Spots Left",
+    "price": 100,
+    "location": "Napa Valley, CA"
+  },
+  {
+    "id": 3,
+    "title": "Luxury Stay in the Mountains",
+    "image": "src/img/Luxury Stay in the Mountains.jpg",
+    "hostedBy": "Emily Johnson",
+    "availability": "Available",
+    "price": 100,
+    "location": "Aspen, CO"
+  },
+  {
+    "id": 4,
+    "title": "Exclusive Island Retreat",
+    "image": "src/img/Exclusive Island Retreat.jpg",
+    "hostedBy": "Megan Wilson",
+    "availability": "Sold Out",
+    "price": 100,
+    "location": "Maldives"
+  },
+  {
+    "id": 5,
+    "title": "Historic Downtown B&B",
+    "image": "src/img/Historic Downtown B&B.jpg",
+    "hostedBy": "Alex Lee",
+    "availability": "Available",
+    "price": 100,
+    "location": "Savannah, GA"
+  },
+  {
+    "id": 6,
+    "title": "Adventure Camping in the Wild",
+    "image": "src/img/Adventure Camping in the Wild.jpg",
+    "hostedBy": "Chris Martin",
+    "availability": "Few Spots Left",
+    "price": 100,
+    "location": "Yosemite National Park, CA"
+  },
+  {
+    "id": 7,
+    "title": "City Penthouse Getaway",
+    "image": "src/img/City Penthouse Getaway.jpg",
+    "hostedBy": "Nina Williams",
+    "availability": "Available",
+    "price": 100,
+    "location": "New York City, NY"
+  },
+  {
+    "id": 8,
+    "title": "Glamping in the Desert",
+    "image": "src/img/Glamping in the Desert.jpg",
+    "hostedBy": "Rachel Green",
+    "availability": "Sold Out",
+    "price": 100,
+    "location": "Joshua Tree, CA"
+  },
+  {
+    "id": 9,
+    "title": "Romantic Treehouse Stay",
+    "image": "src/img/Romantic Treehouse Stay.jpg",
+    "hostedBy": "Ross Geller",
+    "availability": "Available",
+    "price": 100,
+    "location": "Portland, OR"
+  }
+]

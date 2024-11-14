@@ -35,6 +35,7 @@ export default function ListingCard({ listing }) {
           <h5>5 (100)</h5>
         </ListingDetail>
       </div>
+      <h4>$ {listing.Price}</h4>
       <h4
         className={
           listing.Availability === "Few Spots Left"
