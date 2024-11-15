@@ -1,0 +1,14 @@
+[
+  {
+    "1": "hello"
+  },
+  {
+    "id": 2,
+    "firstName": "Syed",
+    "lastName": "Abdul Rahim",
+    "email": "bscs22148@itu.edu.pk",
+    "phoneNo": "03334943210",
+    "checkInDate": "2024-11-13",
+    "checkOutDate": "2024-11-30"
+  }
+]

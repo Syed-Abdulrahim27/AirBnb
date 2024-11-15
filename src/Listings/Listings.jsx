@@ -11,7 +11,7 @@ export default function Listings() {
       .get(`http://localhost:3000/api/Airbnb/Listings`)
       .then((response) => {
         setListings(response.data.data.Listings);
-        // console.log(response.data.data);
+        console.log(response.data.data.Listings);
         setLoading(false);
       })
       .catch((error) => {
@@ -29,8 +29,8 @@ export default function Listings() {
   }
   return (
     <div className="ListingContainer">
-      {Listings.map((listing) => (
-        <ListingCard key={listing.id} listing={listing} />
+      {Listings.map((listing, index) => (
+        <ListingCard key={listing.id} listing={listing} index={index} />
       ))}
     </div>
   );

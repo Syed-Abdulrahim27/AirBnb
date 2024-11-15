@@ -11,28 +11,28 @@ export default function ListingCard({ listing, index }) {
   return (
     <div className="Listing-Card" onClick={handleOnclick}>
       <div className="img">
-        <img src={listing.Image} alt={listing.Title} />
+        <img src={listing.image} alt={listing.title} />
       </div>
-      <h4>{listing.Title}</h4>
-      <h6>Hosted by {listing.HostedBy}</h6>
+      <h4>{listing.title}</h4>
+      <h6>Hosted by {listing.hostedBy}</h6>
       <div className="Details">
         <ListingCardDetail>
           <span>
             <i class="fa-solid fa-bed"></i>
           </span>
-          <h5>5 bedrooms</h5>
+          <h5>{listing.bedrooms} bedrooms</h5>
         </ListingCardDetail>
         <ListingCardDetail>
           <span>
             <i class="fa-solid fa-bath"></i>
           </span>
-          <h5>3 bathrooms</h5>
+          <h5>{listing.bathrooms} bathrooms</h5>
         </ListingCardDetail>
         <ListingCardDetail>
           <span>
             <i class="fa-solid fa-person"></i>
           </span>
-          <h5>8 guests</h5>
+          <h5>{listing.numberOfGuests} guests</h5>
         </ListingCardDetail>
         <ListingCardDetail>
           <span>
@@ -41,7 +41,7 @@ export default function ListingCard({ listing, index }) {
           <h5>5 (100)</h5>
         </ListingCardDetail>
       </div>
-      <h4>$ {listing.Price}</h4>
+      <h4>$ {listing.pricePerNight}</h4>
       <h4
         className={
           listing.Availability === "Few Spots Left"
