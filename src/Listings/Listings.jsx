@@ -2,7 +2,7 @@ import ListingCard from "../ListingCard/ListingCard";
 import "./Listings.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-export default function Listings() {
+export default function Listings({ handleSelectListing }) {
   const [Listings, setListings] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -30,7 +30,12 @@ export default function Listings() {
   return (
     <div className="ListingContainer">
       {Listings.map((listing, index) => (
-        <ListingCard key={listing.id} listing={listing} index={index} />
+        <ListingCard
+          key={listing.id}
+          listing={listing}
+          index={index}
+          handleSelectListing={handleSelectListing}
+        />
       ))}
     </div>
   );

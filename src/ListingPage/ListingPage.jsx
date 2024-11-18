@@ -9,7 +9,7 @@ export default function ListingPage() {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const handleBooking = () => {
-    navigate(`/booking`);
+    navigate(`/booking/${id}`);
   };
 
   useEffect(() => {

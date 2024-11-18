@@ -2,10 +2,11 @@ import ListingCardDetail from "../ListingCardDetail/ListingCardDetail";
 import "./ListingCard.css";
 import { useNavigate } from "react-router-dom";
 
-export default function ListingCard({ listing, index }) {
+export default function ListingCard({ listing, index, handleSelectListing }) {
   const navigate = useNavigate();
 
   const handleOnclick = () => {
+    handleSelectListing(listing);
     navigate(`/ListingDetails/${index}`);
   };
   return (
