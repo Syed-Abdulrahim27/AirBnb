@@ -13,53 +13,41 @@
      ```
 4. A modern browser to view the application.
 ---
-
-### Steps to Run the Backend Server
+### Firstly:
 1. Install dependencies:
    npm install
 
-2. Start the server:
+### Steps to Run the Backend Server
+
+1. Start the server:
    npm start
 
-3. The backend server should now be running at `http://localhost:3000`.
-
+2. The backend server should now be running at `http://localhost:3000`.
 ---
 
 ### Steps to Run the Frontend Server
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
+1. Start the development server:
    npm run dev
-   ```
-
-4. The frontend server should now be running at `http://localhost:5173`.
+   
+2. The frontend server should now be running at `http://localhost:5173`.
 
 ---
-
 ## Details About Routing and Navigation
 
 ### Backend Routes
 
 #### Listings Routes
 - `GET /api/Airbnb/Listings` - Fetch all listings.
+- `GET /api/Airbnb/Listings/:id` - Fetch listing by id.
 - `POST /api/Airbnb/Listings` - Create a new listing.
-- `PATCH /api/Airbnb/Listings/:id` - Update an existing listing.
 - `DELETE /api/Airbnb/Listings/:id` - Delete a listing.
+- `SEARCH /api/Airbnb/Listings/search?query=""`
 
 #### Bookings Routes
 - `GET /api/Airbnb/Bookings` - Fetch all bookings.
+- `GET /api/Airbnb/Bookings/:id` - Fetch booking by id.
 - `POST /api/Airbnb/Bookings` - Create a new booking.
-- `PATCH /api/Airbnb/Bookings/:id` - Update an existing booking.
 - `DELETE /api/Airbnb/Bookings/:id` - Delete a booking.
 
 #### Authentication Routes
